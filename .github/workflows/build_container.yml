@@ -17,6 +17,7 @@ jobs:
           - { GDAL_VERSION: "3.2.1", PROJ_VERSION: "7.2.1", PYTHON: "3.8" }
           - { GDAL_VERSION: "3.2.1", PROJ_VERSION: "7.2.1", PYTHON: "3.9" }
 
+    name: Python ${{ matrix.PYTHON }} / GDAL ${{ matrix.GDAL_VERSION }} / PROJ ${{ matrix.PROJ_VERSION }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
