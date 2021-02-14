@@ -40,7 +40,7 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            ghcr.io/rbuffat/buildcontainer:gdal-${{ matrix.GDAL_VERSION }-py-${{ matrix.PYTHON }}
+            ghcr.io/rbuffat/buildcontainer:gdal-${{ matrix.GDAL_VERSION }}-py-${{ matrix.PYTHON }}
           build-args: |
             GDAL_VERSION=${{ matrix.GDAL_VERSION }}
             PROJ_VERSION=${{ matrix.PROJ_VERSION }}
